@@ -1,7 +1,7 @@
 $('#banner').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
-    // autoplay: true,
+    autoplay: true,
     infinite: true,
     
     dots:true,
