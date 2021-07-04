@@ -427,6 +427,7 @@ h1,h2,h3,h4,h5,h6,p{
 .work_gallery img {
 
    width: 100%;
+
 }
 
 
@@ -455,7 +456,102 @@ h1,h2,h3,h4,h5,h6,p{
    -o-transition: all .3s;
    transition: all .3s;
 }
+.work_gallery:after {
+   position: absolute;
+   content: '';
+   top: 0;
+   left: 0;
+   z-index: 9;
+   height: 100%;
+   width: 100%;
+   background: rgba(55,160,0, .8);
+   opacity: 0;
+}
+
+.work_gallery:hover::after {
+   opacity: 1;
+   transform: scale(1) translate3d(337px, 0px, 0px);
+   backface-visibility: hidden;
+   perspective: 1000px;
+   transform-style: preserve-3d;
+   position: absolute;
+   transition: all 0.5s ease-out 0ms;
+   pointer-events: auto;
+}
 
 
 /* work finish */
+/* service start */
 
+#services_part{
+   padding: 60px 0;    
+}
+.service_heading h2{
+   font-weight: 700;
+   font-size: 40px;
+   border-bottom: 2px solid #37A000;
+   display: inline-block;
+   padding-bottom: 50px;
+   margin: 60px 0px;
+   position: relative;
+}
+.service_heading h2::after{
+   position: absolute;
+   height: 30px;
+   width: 30px;
+   background-color: #37A000;
+   content: '';
+   left: 50%;
+   transform: translate(-50%) rotate(45deg);
+   margin-top: 84px;
+
+
+}
+.services_items{
+   margin-top: 60px;
+   border-bottom:1px solid #858588;
+   border-right:1px solid #858588;
+}
+.service_item{
+   border-top:1px solid #858588;
+   border-left:1px solid #858588;
+   height: 200px;
+   overflow: hidden;
+   position: relative;
+}
+.service_item i{
+   margin-top: 60px;
+   border-bottom: 2px solid #858588;
+   height: 59px;
+   width: 59px;
+   line-height: 57px;
+   text-align: center;
+   transition: .4s;
+   color: #37A000;
+   font-size: 40px;
+}
+.service_item:hover i{
+   transform: translateY(-50px);
+   border: 2px solid #858588;
+   border-radius: 50%;
+}
+.service_item h3{
+   transition: .4s;
+   color: black;
+   padding-top: 20px;
+}
+.service_item:hover h3{
+   opacity: 0;
+}
+.service_item p{
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   opacity: 0;
+   transition: .4s;
+   margin-top: 30px;
+}
+.service_item:hover p{
+   opacity: 1;
+}
+/* service finish */
