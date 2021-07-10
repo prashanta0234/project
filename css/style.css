@@ -484,7 +484,8 @@ h1,h2,h3,h4,h5,h6,p{
 /* service start */
 
 #services_part{
-   padding: 60px 0;    
+   padding: 60px 0;
+   margin-bottom: 50px;    
 }
 .service_heading h2{
    font-weight: 700;
@@ -555,3 +556,242 @@ h1,h2,h3,h4,h5,h6,p{
    opacity: 1;
 }
 /* service finish */
+/* skill part start */
+#skill_part {
+   padding: 0px 0 68px 0;
+   margin-top: 60px;
+}
+
+
+
+.skill_left_part h2 {
+   color: #353535;
+   margin-top: 60px;
+   margin-bottom: 30px;
+   text-align: left;
+   padding-left: 100px;
+  
+}
+
+.skill_left_part p {
+   color: #353535;
+   font-weight: 400;
+   letter-spacing: 1px;
+   line-height: 24px;
+   text-align: left;
+   font-size: 14px;
+   padding-left: 100px;
+   padding-right: 27px;
+   margin-bottom: 30px;
+  
+}
+
+.skill_right_part {
+   padding: 47px 94px 0 16px;
+}
+
+.skill_left_bx_shadow {
+   box-shadow: 0 0 5px #ccc;
+   z-index: 1;
+  
+}
+
+.skill_right_resize {
+   min-height: 340px;
+   background: url(../image/skill_img.jpg);
+   background-size: cover;
+   background-position: center;
+   background-attachment: fixed;
+   margin: 30px 0;
+   color: white;
+   z-index: -2;
+  
+
+}
+
+
+.skill_right_part h5 {
+   color: white;
+   padding-bottom: 10px;
+   display: block;
+   font-weight: 500;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   z-index: 99999;
+}
+
+
+.skill_right_resize::after{
+   content: '';
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   background: rgba(0,0,0,.7);
+   left: 0;
+   top: 0;
+   z-index: -1;
+   
+  
+}
+
+
+.barfiller {
+   width: 100%;
+   height: 15px;
+   background: #fcfcfc;
+  
+   position: relative;
+   margin-bottom: 15px;
+   box-shadow: inset 1px 4px 9px -6px rgba(0, 0, 0, .5);
+   -moz-box-shadow: inset 1px 4px 9px -6px rgba(0, 0, 0, .5);
+}
+
+.barfiller .fill {
+   display: block;
+   position: relative;
+   width: 0px;
+   height: 100%;
+   background: #333;
+   z-index: 2;
+}
+
+.barfiller .tipWrap {
+   display: none;
+}
+
+.barfiller .tip {
+   margin-top: -30px;
+   padding: 2px 10px;
+   font-size: 11px;
+   color: #fff;
+   left: 0px;
+   position: absolute;
+   z-index: 2;
+   background: #37a000;
+   border-radius: 4px;
+}
+
+.barfiller .tip:after {
+   border: solid;
+   border-color: #37a000 transparent;
+   border-width: 6px 6px 0 6px;
+   content: "";
+   display: block;
+   position: absolute;
+   left: 9px;
+   top: 100%;
+   z-index: 9;
+}
+
+.skill_right_part .fill {
+   background: #37a000 !important;
+}
+
+
+/* skill part finish */
+/* team part start */
+.team-text{
+   margin:5% 15%;
+}
+.team-text h1{
+   padding-bottom: 30px;
+   margin-bottom: 30px;
+   border-bottom: 2px solid #37A000;
+   display: inline-block;
+}
+.team-text h1::after{
+   position: absolute;
+   height: 30px;
+   width: 30px;
+   background-color: #37A000;
+   content: '';
+   left: 50%;
+   transform: translate(-50%) rotate(45deg);
+   margin-top: 64px;
+}
+.team{
+   margin-bottom: 50px;
+   margin-top: 50px;
+ }
+ 
+ .team_img{
+   width: 25%;
+   float: left;
+   opacity: 0.5;
+ 
+ }
+ 
+ .team_img img{
+   width: 100%;
+ }
+ 
+ 
+ .arrows_right,
+ .arrows_left{
+   position: absolute;
+   top: 50%;
+   width: 40px;
+   height: 40px;
+   background: #02918C;
+   text-align: center;;
+   color: #fff;
+   line-height: 40px;
+   z-index: 9999999;
+   transform: translateY(-50%); 
+ 
+   border-radius: 50%;
+ }
+ 
+ .arrows_right{
+   right: 0;
+ 
+ }
+ .arrows_left{
+   left: 0;
+   
+ }
+
+ .team_slide_info{
+   width: 900px;
+   border: 1px solid rgb(71, 70, 70);
+   margin: 40px auto ;
+   padding: 40px;
+ 
+ }
+ .team_slide_info h1,
+ h3,
+ p{
+    color: black;
+    padding-bottom: 20px;
+ }
+ .team_slide_info::after{
+    position: absolute;
+    content: '';
+    height: 30px;
+    width: 30px;
+    border: 1px solid rgb(71, 70, 70);
+    transform: translate(-50%) rotate(45deg);
+    left: 50%;
+    bottom: 282px;
+    border-right: none;
+    border-bottom: none;
+    background-color: white;
+
+
+   }
+
+ .team_img_info  .slick-center{
+   opacity: 1;
+ }
+ .team_info i{
+    height: 30px;
+    width: 30px;
+    border:1px solid #858884;
+    text-align: center;
+    padding-top: 5px;
+    color: #37A000;
+    border-radius:5px;
+ }
+/* team part finish */
+
+
