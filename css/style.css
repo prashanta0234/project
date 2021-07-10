@@ -55,6 +55,7 @@ h1,h2,h3,h4,h5,h6,p{
 /* navbar finish */
 /* banner start */
 .banner_item{
+   background:url(../image/banner1.jpg);
    position: relative;
    background-size:cover !important;
    background-position: center !important;
@@ -470,7 +471,7 @@ h1,h2,h3,h4,h5,h6,p{
 
 .work_gallery:hover::after {
    opacity: 1;
-   transform: scale(1) translate3d(337px, 0px, 0px);
+   transform: scale(1) ;
    backface-visibility: hidden;
    perspective: 1000px;
    transform-style: preserve-3d;
@@ -569,7 +570,7 @@ h1,h2,h3,h4,h5,h6,p{
    margin-top: 60px;
    margin-bottom: 30px;
    text-align: left;
-   padding-left: 100px;
+   padding-left: 50px;
   
 }
 
@@ -764,6 +765,12 @@ h1,h2,h3,h4,h5,h6,p{
     color: black;
     padding-bottom: 20px;
  }
+ .team_slide_info h1{
+    font-size: 30px;
+ }
+ .team_slide_info h3{
+    font-size: 20px;
+ }
  .team_slide_info::after{
     position: absolute;
     content: '';
@@ -772,7 +779,7 @@ h1,h2,h3,h4,h5,h6,p{
     border: 1px solid rgb(71, 70, 70);
     transform: translate(-50%) rotate(45deg);
     left: 50%;
-    bottom: 282px;
+    bottom:312px;
     border-right: none;
     border-bottom: none;
     background-color: white;
@@ -793,5 +800,34 @@ h1,h2,h3,h4,h5,h6,p{
     border-radius:5px;
  }
 /* team part finish */
+/* feedback start */
+#feedback{
+   height: 300px;
+   width: 100%;
+   margin-bottom: 200px;
+}
+.feedback-main{
+   background-image: url(../image/comments_img.jpg);
+
+   height: 400px;
+   width: 100%;
+   position: relative;
+   background-size: cover !important;
+   background-repeat: no-repeat !important;
+   background-position: center;
+   background-attachment: fixed;
+}
+.feedback-main::after{
+   content: '';
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   background: rgba(0,0,0,.6);
+   left: 0;
+   top: 0;
+   z-index:1;
+
+}
+/* feedback finish */
 
 
